@@ -1,11 +1,11 @@
 <div class="row mb-2">
   <div class="col-sm-6">
-    <h1>Data Surat Keluar</h1>
+    <h1>Data User</h1>
   </div>
   <div class="col-sm-6">
     <ol class="breadcrumb float-sm-right">
       <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-      <li class="breadcrumb-item active">Surat Keluar</li>
+      <li class="breadcrumb-item active">User</li>
     </ol>
   </div>
 </div>
@@ -18,7 +18,7 @@
   <!-- Default box -->
   <div class="card">
     <div class="card-header">
-      <a href="?page=keluar&action=add" class="btn btn-outline-primary btn-sm"> <i class="fa fa-pencil-alt"></i> Tambah</a>
+      <a href="?page=user&action=add" class="btn btn-outline-primary btn-sm"> <i class="fa fa-pencil-alt"></i> Tambah</a>
       <div class="card-tools">
         <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
           <i class="fas fa-minus"></i></button>
@@ -31,23 +31,22 @@
         <thead>
           <tr>
             <th>No</th>
-            <th>No Agenda</th>
-            <th>Tanggal Surat</th>
-            <th>Perihal</th>
-            <th>Tujuan</th>
-            <th>File Surat</th>
+            <th>Nama User</th>
+            <th>Username</th>
+            <th>Jabatan</th>
+            <th>Aksi</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Trident</td>
-            <td>Internet
-              Explorer 4.0
+            <td>1</td>
+            <td>Aris</td>
+            <td>user</td>
+            <td>Admin Kasi Kesra</td>
+            <td>
+              <a href="" class="btn btn-sm btn-info"> <i class="fas fa-edit"></i> Edit</a>
+              <a href="" class="btn btn-sm btn-danger"> <i class="fas fa-trash-alt"></i> Delete</a>
             </td>
-            <td>Win 95+</td>
-            <td> 4</td>
-            <td>X</td>
-            <td>X</td>
           </tr>
         </tbody>
       </table>

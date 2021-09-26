@@ -60,27 +60,3 @@
     </div>
   </div>
 </section>
-
-<?php
-
-if (isset($_POST['edit'])) {
-  $id_arsip = $_POST['id_arsip'];
-  $nama_file = $_POST['nama_file'];
-  $file_arsip = $_FILES['file_arsip']['name'];
-  $file_arsip_tmp = $_FILES['file_arsip']['tmp_name'];
-
-  $sql = $conn->query("UPDATE tb_arsip SET nama_arsip = '$nama_file', file_arsip = '$file_arsip' WHERE id_arsip = '$id_arsip'");
-
-  move_uploaded_file($file_arsip_tmp, 'file_arsip/' . $file_arsip);
-
-  if ($sql) {
-?>
-    <script>
-      alert("Arsip berhasil diedit");
-      window.location.href = "?page=arsip";
-    </script>
-<?php
-  }
-}
-
-?>

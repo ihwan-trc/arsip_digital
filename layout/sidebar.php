@@ -3,7 +3,7 @@
   <!-- Brand Logo -->
   <a href="#" class="brand-link">
     <img src="asset/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-    <span class="brand-text font-weight-light">AdminLTE 3</span>
+    <span class="brand-text font-weight-light">Arsip Digital</span>
   </a>
 
   <!-- Sidebar -->
@@ -32,9 +32,16 @@
         </li>
 
         <li class="nav-item">
-          <a href="?page=keluar" class="nav-link">
-            <i class="fas fa-file nav-icon"></i>
-            <p>Surat Keluar</p>
+          <a href="?page=masuk" class="nav-link">
+            <i class="fas fa-file-alt nav-icon"></i>
+            <p>Arsip Masuk</p>
+          </a>
+        </li>
+        <!-- Menu verifikai muncul jika level verifikasi -->
+        <li class="nav-item">
+          <a href="?page=verif" class="nav-link">
+            <i class="fas fa-check-square nav-icon"></i>
+            <p>Verifikasi Arsip</p><span class="badge badge-danger float-right">1</span>
           </a>
         </li>
         <li class="nav-header">ARSIP</li>

@@ -13,18 +13,26 @@
     <!-- Notifications Dropdown Menu -->
     <li class="nav-item dropdown">
       <a class="nav-link" data-toggle="dropdown" href="#">
-        <i class="far fa-bell"></i>
+        <i class="fas fa-user"></i>
       </a>
       <div class="dropdown-menu dropdown-menu-right">
-        <a href="#" class="dropdown-item">
-          <i class="fas fa-user mr-2"></i> Profile
+        <a href="?page=user" class="dropdown-item">
+          <i class="fas fa-user mr-2"></i> User
+        </a>
+        <a href="?page=pass" class="dropdown-item">
+          <i class="fas fa-unlock mr-2"></i> Ganti Password
         </a>
         <div class="dropdown-divider"></div>
-        <a href="#" class="dropdown-item">
-          <i class="fas fa-cogs mr-2"></i> Setting
+        <a href="logout.php" class="dropdown-item">
+          <i class="fas fa-sign-out-alt mr-2"></i> Logout
         </a>
       </div>
     </li>
   </ul>
 </nav>
 <!-- /.navbar -->
+
+
+<!-- 
+  menu user muncul hanya di superadmin
+ -->

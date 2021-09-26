@@ -4,15 +4,15 @@
 $page = $_GET['page'];
 $action = $_GET['action'];
 
-if ($page == "keluar") {
+if ($page == "masuk") {
   if ($action == "") {
-    include "page/keluar/keluar.php";
+    include "page/masuk/masuk.php";
   } elseif ($action == "add") {
-    include "page/keluar/add.php";
+    include "page/masuk/add.php";
   } elseif ($action == "edit") {
-    include "page/keluar/edit.php";
+    include "page/masuk/edit.php";
   } elseif ($action == "delete") {
-    include "page/keluar/delete.php";
+    include "page/masuk/delete.php";
   }
 } elseif ($page == "arsip") {
   if ($action == "") {
@@ -23,6 +23,20 @@ if ($page == "keluar") {
     include "page/arsip/edit.php";
   } elseif ($action == "delete") {
     include "page/arsip/delete.php";
+  }
+} elseif ($page == "verif") {
+  if ($action == "") {
+    include "page/masuk/verif.php";
+  }
+} elseif ($page == "user") {
+  if ($action == "") {
+    include "page/user/user.php";
+  } elseif ($action == "add") {
+    include "page/user/add.php";
+  }
+} elseif ($page == "pass") {
+  if ($action == "") {
+    include "page/user/pass.php";
   }
 } else {
   include "layout/dashboard.php";
