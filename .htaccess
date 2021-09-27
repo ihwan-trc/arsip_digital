@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteRule ^masuk$ index.php?page=masuk [QSA]
+RewriteRule ^verif$ index.php?page=verif [QSA]
+RewriteRule ^arsip$ index.php?page=arsip [QSA]

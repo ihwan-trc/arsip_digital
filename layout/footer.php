@@ -24,6 +24,37 @@
 <script src="asset/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="asset/dist/js/demo.js"></script>
+<!-- ChartJS -->
+<script src="asset/plugins/chart.js/Chart.min.js"></script>
+
+<!-- Bar Chart -->
+<script>
+  $(function() {
+    //-------------
+    //- BAR CHART -
+    //-------------
+    var barChartCanvas = $('#barChart').get(0).getContext('2d')
+    var barChartData = jQuery.extend(true, {}, areaChartData)
+    var temp0 = areaChartData.datasets[0]
+    var temp1 = areaChartData.datasets[1]
+    barChartData.datasets[0] = temp1
+    barChartData.datasets[1] = temp0
+
+    var barChartOptions = {
+      responsive: true,
+      maintainAspectRatio: false,
+      datasetFill: false
+    }
+
+    var barChart = new Chart(barChartCanvas, {
+      type: 'bar',
+      data: barChartData,
+      options: barChartOptions
+    })
+
+
+  })
+</script>
 
 <script>
   $(function() {
@@ -54,6 +85,8 @@
     $('[data-toggle="tooltip"]').tooltip()
   })
 </script>
+
+
 
 </body>
 
